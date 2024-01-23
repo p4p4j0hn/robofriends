@@ -18,6 +18,7 @@ class App extends Component {
     this.setState({ searchfield: event.target.value });
   }
 
+<<<<<<< Updated upstream
   render() {
     const { robots, searchfield } = this.state;
     const filteredRobots = robots.filter(robot => {
@@ -26,14 +27,16 @@ class App extends Component {
     return !robots.length ?
       (
         <div className='tc'>
-          <h1 className='f1'>RoboFriends</h1>
-          <h1 className='f2'>Loading</h1>
+          <h1 className='f1-ns fw2'>RoboFriends</h1>
+          <h1 className='f2-ns'>Loading</h1>
         </div>
       ) :
       (
-        <div className='tc'>
-          <h1 className='f1'>RoboFriends</h1>
-          <SearchBox searchChange={this.onSearchChange} />
+        <div className='tc wrapper'>
+          <div className='header'>
+            <h1 className='f1-ns fw2'>RoboFriends</h1>
+            <SearchBox searchChange={this.onSearchChange} />
+          </div>
           <Scroll>
             <ErrorBoundary fallback={<h2>Oooops. That is not good.</h2>}>
               <CardList robots={filteredRobots} />
@@ -48,6 +51,26 @@ class App extends Component {
       .then(response => response.json())
       .then(users => this.setState({ robots: users }));
   }
+=======
+  return !robots.length ?
+    (
+      <div className='tc'>
+        <h1 className='f1 fw2'>RoboFriends</h1>
+        <h1 className='f2'>Loading</h1>
+      </div>
+    ) :
+    (
+      <div className='tc'>
+        <h1 className='f1 fw2'>RoboFriends</h1>
+        <SearchBox searchChange={onSearchChange} />
+        <Scroll>
+          <ErrorBoundary fallback={<h2>Oooops. That is not good.</h2>}>
+            <CardList robots={filteredRobots} />
+          </ErrorBoundary>
+        </Scroll>
+      </div>
+    );
+>>>>>>> Stashed changes
 }
 
 export default App;

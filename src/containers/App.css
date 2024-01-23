@@ -7,6 +7,17 @@
 
 h1 {
     font-family: 'SEGA LOGO FONT';
-    font-weight: 200;
     color: #0ccac4;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  position:relative;
+  /* height: 200px; */
+  flex: 0 0 auto;
 }
