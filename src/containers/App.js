@@ -35,7 +35,7 @@ export default function App() {
         <h1 className='f1'>RoboFriends</h1>
         <SearchBox searchChange={onSearchChange} />
         <Scroll>
-          <ErrorBoundary>
+          <ErrorBoundary fallback={<h2>Oooops. That is not good.</h2>}>
             <CardList robots={filteredRobots} />
           </ErrorBoundary>
         </Scroll>
