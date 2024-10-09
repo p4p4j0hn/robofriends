@@ -1,11 +1,11 @@
 import { Component } from 'react';
 
 class ErrorBoundary extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      hasError: false
-    }
+      hasError: false,
+    };
   }
 
   componentDidCatch(error, info) {
@@ -13,10 +13,7 @@ class ErrorBoundary extends Component {
   }
 
   render() {
-    return this.state.hasError ?
-      this.props.fallback
-      :
-      this.props.children;
+    return this.state.hasError ? this.props.fallback : this.props.children;
   }
 }
 
