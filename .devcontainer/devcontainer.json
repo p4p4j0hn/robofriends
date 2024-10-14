@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
-  "name": "Robofriends",
+  "name": "Node.js",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
 
@@ -14,10 +14,15 @@
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [3000],
 
+  "onCreateCommand": {
+    // "install-curl": "apt-get install -y curl",
+    "install-starship": "curl -sS https://starship.rs/install.sh | sh -s -- -y"
+  },
+
   // Use 'postCreateCommand' to run commands after the container is created.
-  "postAttachCommand": {
-    "npm-project-dependencies": "npm install",
-    "npm-global-dependencies": "npm install -g eslint prettier"
+  "postCreateCommand": {
+    "use-starship": "echo 'eval \"$(starship init bash)\"' >> ~/.bashrc",
+    "npm-project": "npm ci"
   },
 
   // Configure tool-specific properties.
@@ -34,9 +39,9 @@
         "mhutchie.git-graph",
         "donjayamanne.githistory",
         "ecmel.vscode-html-css",
-        "ritwickdey.LiveServer",
         "christian-kohler.path-intellisense",
-        "humao.rest-client"
+        "firefox-devtools.vscode-firefox-debug",
+        "christian-kohler.npm-intellisense"
       ]
     }
   }
