@@ -4,6 +4,7 @@ import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import CardList from '../components/CardList';
 import ErrorBoundary from '../components/ErrorBoundary';
+import Header from '../components/Header';
 import './App.css';
 
 import { setSearchField, requestRobots } from '../actions';
@@ -36,13 +37,13 @@ class App extends Component {
     });
     return isPending ? (
       <div className='tc'>
-        <h1 className='f1-ns fw2'>RoboFriends</h1>
+        <Header />
         <h1 className='f2-ns'>Loading</h1>
       </div>
     ) : (
       <div className='tc wrapper'>
         <div className='header'>
-          <h1 className='f1-ns fw2'>RoboFriends</h1>
+          <Header />
           <SearchBox searchChange={onSearchChange} />
         </div>
         <Scroll>
