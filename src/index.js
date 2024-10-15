@@ -17,7 +17,7 @@ const rootReducer = combineReducers({ searchRobots, requestRobots });
 
 const store = createStore(
   rootReducer,
-  composeEnhancers(applyMiddleware(thunk, logger))
+  composeEnhancers(applyMiddleware(thunk)), // removed `logger` for testing
 );
 
 const root = createRoot(document.getElementById('root'));
@@ -26,7 +26,7 @@ root.render(
     <Provider store={store}>
       <App />
     </Provider>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 reportWebVitals();
