@@ -1,7 +1,12 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
+import {
+  legacy_createStore as createStore,
+  applyMiddleware,
+  compose,
+  combineReducers,
+} from 'redux';
 import { createLogger } from 'redux-logger';
 import { thunk } from 'redux-thunk';
 import './index.css';
