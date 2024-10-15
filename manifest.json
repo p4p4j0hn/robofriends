@@ -29,5 +29,7 @@
   ],
   "name": "RoboFriends",
   "short_name": "RoboFriends",
+  "start_url": "/robofriends/",
+  "id": "/robofriends/",
   "theme_color": "#ffffff"
 }
