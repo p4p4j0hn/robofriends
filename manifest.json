@@ -13,6 +13,20 @@
       "type": "image/png"
     }
   ],
+  "screenshots": [
+    {
+      "src": "./robofriends.png",
+      "type": "image/png",
+      "sizes": "1400x700",
+      "form_factor": "wide"
+    },
+    {
+      "src": "./robofriends-small.png",
+      "type": "image/png",
+      "sizes": "540x961",
+      "form_factor": "narrow"
+    }
+  ],
   "name": "RoboFriends",
   "short_name": "RoboFriends",
   "theme_color": "#ffffff"
