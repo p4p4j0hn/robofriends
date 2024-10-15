@@ -4,24 +4,24 @@
   "icons": [
     {
       "sizes": "192x192",
-      "src": "%PUBLIC_URL%/android-chrome-192x192.png",
+      "src": "/robofriends/android-chrome-192x192.png",
       "type": "image/png"
     },
     {
       "sizes": "512x512",
-      "src": "%PUBLIC_URL%/android-chrome-512x512.png",
+      "src": "/robofriends/android-chrome-512x512.png",
       "type": "image/png"
     }
   ],
   "screenshots": [
     {
-      "src": "%PUBLIC_URL%/robofriends.png",
+      "src": "/robofriends/robofriends.png",
       "type": "image/png",
       "sizes": "1400x700",
       "form_factor": "wide"
     },
     {
-      "src": "%PUBLIC_URL%/robofriends-small.png",
+      "src": "/robofriends/robofriends-small.png",
       "type": "image/png",
       "sizes": "540x961",
       "form_factor": "narrow"
