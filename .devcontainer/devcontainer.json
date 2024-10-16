@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
-  "name": "Node.js",
+  "name": "Robofriends",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
   "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
 
@@ -22,7 +22,7 @@
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": {
     "use-starship": "echo 'eval \"$(starship init bash)\"' >> ~/.bashrc",
-    "npm-project": "npm ci"
+    "npm-project": "yarn install"
   },
 
   // Configure tool-specific properties.
@@ -41,7 +41,8 @@
         "ecmel.vscode-html-css",
         "christian-kohler.path-intellisense",
         "firefox-devtools.vscode-firefox-debug",
-        "christian-kohler.npm-intellisense"
+        "christian-kohler.npm-intellisense",
+        "Orta.vscode-jest"
       ]
     }
   }
