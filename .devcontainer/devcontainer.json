@@ -22,7 +22,7 @@
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": {
     "use-starship": "echo 'eval \"$(starship init bash)\"' >> ~/.bashrc",
-    "npm-project": "yarn install"
+    "npm-project": "npm install"
   },
 
   // Configure tool-specific properties.
