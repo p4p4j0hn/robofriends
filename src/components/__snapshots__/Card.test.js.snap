@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component expect to render Card component 1`] = `
+<div
+  className="tc bg-light-red dib br3 pa3 ma2 grow bw2 shadow-5"
+>
+  <img
+    alt="robot"
+    src="https://robohash.org/undefined?size=200x200"
+  />
+  <div>
+    <h2 />
+    <p />
+  </div>
+</div>
+`;
+
+exports[`card component expect to render Card component 1`] = `
+<div
+  className="tc bg-light-red dib br3 pa3 ma2 grow bw2 shadow-5"
+>
+  <img
+    alt="robot"
+    src="https://robohash.org/undefined?size=200x200"
+  />
+  <div>
+    <h2 />
+    <p />
+  </div>
+</div>
+`;
+
+exports[`card expect to render Card component 1`] = `
+<div
+  className="tc bg-light-red dib br3 pa3 ma2 grow bw2 shadow-5"
+>
+  <img
+    alt="robot"
+    src="https://robohash.org/undefined?size=200x200"
+  />
+  <div>
+    <h2 />
+    <p />
+  </div>
+</div>
+`;
+
+exports[`expect to render Card component 1`] = `
+<div
+  className="tc bg-light-red dib br3 pa3 ma2 grow bw2 shadow-5"
+>
+  <img
+    alt="robot"
+    src="https://robohash.org/undefined?size=200x200"
+  />
+  <div>
+    <h2 />
+    <p />
+  </div>
+</div>
+`;
