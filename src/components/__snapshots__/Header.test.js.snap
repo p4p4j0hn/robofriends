@@ -1,27 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`expect to render Header component 1`] = `
-<Fragment>
-  <h1
-    className="f1-ns fw2"
-  >
-    RoboFriends
-  </h1>
-  <CounterButton />
-</Fragment>
-`;
-
-exports[`header component expect to render Header component 1`] = `
-<Fragment>
-  <h1
-    className="f1-ns fw2"
-  >
-    RoboFriends
-  </h1>
-  <CounterButton />
-</Fragment>
-`;
-
 exports[`header expect to render Header component 1`] = `
 <Fragment>
   <h1
