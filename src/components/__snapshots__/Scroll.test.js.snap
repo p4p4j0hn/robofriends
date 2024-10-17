@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`scroll expect to render Scroll component 1`] = `
+<div
+  className="hideScrollBar"
+  style={
+    Object {
+      "flex": "0 1 auto",
+      "overflowY": "scroll",
+    }
+  }
+/>
+`;
