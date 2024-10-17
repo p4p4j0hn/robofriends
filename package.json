@@ -61,6 +61,17 @@
     "lint-staged": "^15.2.10",
     "prettier": "^3.3.3"
   },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "plugin:jest/all"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "*.{js, jsx,ts,tsx}": [
       "eslint --quiet --fix"
