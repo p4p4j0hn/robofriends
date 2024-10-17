@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`counterbutton correctly increments the counter 1`] = `
+<button
+  color="red"
+  id="counter"
+  onClick={[Function]}
+>
+  Count: 
+  0
+</button>
+`;
+
+exports[`counterbutton expect to render CounterButton component 1`] = `
+<button
+  color="red"
+  id="counter"
+  onClick={[Function]}
+>
+  Count: 
+  0
+</button>
+`;
