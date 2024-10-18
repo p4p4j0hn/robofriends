@@ -12,19 +12,21 @@ class MainPage extends Component {
     this.props.onRequestRobots();
   }
 
-  filteredRobots = (robots) => {
-    return robots.filter((robot) => {
+  filteredRobots = () => {
+    return this.props.robots.filter((robot) => {
       return robot.name.toLowerCase().includes(this.props.searchField.toLowerCase());
     });
   };
 
   render() {
-    const { onSearchChange, robots, isPending } = this.props;
+    const { onSearchChange, isPending } = this.props;
 
     return isPending ? (
       <div className='tc'>
         <Header />
-        <h1 className='f2-ns'>Loading</h1>
+        <h1 id='loading' className='f2-ns'>
+          Loading
+        </h1>
       </div>
     ) : (
       <div className='tc wrapper'>
@@ -34,7 +36,7 @@ class MainPage extends Component {
         </div>
         <Scroll>
           <ErrorBoundary fallback={<h2>Oooops. That is not good.</h2>}>
-            <CardList robots={this.filteredRobots(robots)} />
+            <CardList robots={this.filteredRobots()} />
           </ErrorBoundary>
         </Scroll>
       </div>
