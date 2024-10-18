@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test MainPage renders MainPage without crashing 1`] = `
+<div
+  className="tc wrapper"
+>
+  <div
+    className="header"
+  >
+    <Header />
+    <SearchBox />
+  </div>
+  <Scroll>
+    <ErrorBoundary
+      fallback={
+        <h2>
+          Oooops. That is not good.
+        </h2>
+      }
+    >
+      <CardList
+        robots={Array []}
+      />
+    </ErrorBoundary>
+  </Scroll>
+</div>
+`;
