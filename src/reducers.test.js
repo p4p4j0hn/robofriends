@@ -1,5 +1,4 @@
 import {
-  CHANGE_SEARCHFIELD,
   REQUEST_ROBOTS_PENDING,
   REQUEST_ROBOTS_SUCCESS,
   REQUEST_ROBOTS_FAILED
@@ -18,7 +17,7 @@ describe('searchRobots', () => {
     expect(reducers.searchRobots(undefined, {})).toStrictEqual(initialStateSearch);
   });
 
-  it('should handle CHANGE_SEARCHFIELD', () => {
+  it('should handle CHANGE_SEARCHFIELD action', () => {
     expect.assertions(1);
     expect(reducers.searchRobots(initialStateSearch, actions.setSearchField('abc'))).toStrictEqual({
       searchField: 'abc'
