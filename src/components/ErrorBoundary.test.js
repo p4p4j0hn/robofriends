@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import ErrorBoundary from './ErrorBoundary';
-import util from 'util';
 
 describe('errorboundary', () => {
   it('expect to render ErrorBoundary component', () => {
@@ -11,9 +10,6 @@ describe('errorboundary', () => {
 
   it('expect the component to catch', () => {
     expect.assertions(4);
-    Object.defineProperty(global, 'TextEncoder', {
-      value: util.TextEncoder
-    });
     const MyComponent = () => <div>Render</div>;
     const DecoratedComponent = () => {
       return (
