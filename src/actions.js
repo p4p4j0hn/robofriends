@@ -12,9 +12,12 @@ export const setSearchField = (text) => ({
   payload: text
 });
 
-export const requestRobots = () => (dispatch) => {
+export const requestRobots = () => async (dispatch) => {
   dispatch({ type: REQUEST_ROBOTS_PENDING });
-  apiCall('https://jsonplaceholder.typicode.com/users')
-    .then((data) => dispatch({ type: REQUEST_ROBOTS_SUCCESS, payload: data }))
-    .catch((error) => dispatch({ type: REQUEST_ROBOTS_FAILED, payload: error }));
+  try {
+    const data = await apiCall('https://jsonplaceholder.typicode.com/users');
+    dispatch({ type: REQUEST_ROBOTS_SUCCESS, payload: data });
+  } catch (error) {
+    dispatch({ type: REQUEST_ROBOTS_FAILED, payload: error });
+  }
 };
