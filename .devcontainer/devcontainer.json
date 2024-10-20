@@ -42,7 +42,8 @@
         "christian-kohler.path-intellisense",
         "firefox-devtools.vscode-firefox-debug",
         "christian-kohler.npm-intellisense",
-        "Orta.vscode-jest"
+        "Orta.vscode-jest",
+        "github.vscode-github-actions"
       ]
     }
   }
