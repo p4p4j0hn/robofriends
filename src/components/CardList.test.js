@@ -1,9 +1,8 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 import CardList from './CardList';
 
 describe('cardlist', () => {
-  it('expect to render CardList component', () => {
+  it('expect to render CardList component without crashing', () => {
     expect.assertions(1);
     const mockRobots = [
       {
@@ -12,6 +11,6 @@ describe('cardlist', () => {
         email: 'john@gmail.com'
       }
     ];
-    expect(shallow(<CardList robots={mockRobots} />)).toMatchSnapshot();
+    expect(renderer.create(<CardList robots={mockRobots} />).toJSON()).toMatchSnapshot();
   });
 });
