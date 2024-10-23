@@ -14,3 +14,18 @@ exports[`card expect to render Card component 1`] = `
   </div>
 </div>
 `;
+
+exports[`card expect to render Card component without crashing 1`] = `
+<div
+  className="tc bg-light-red dib br3 pa3 ma2 grow bw2 shadow-5"
+>
+  <img
+    alt="robot"
+    src="https://robohash.org/undefined?size=200x200"
+  />
+  <div>
+    <h2 />
+    <p />
+  </div>
+</div>
+`;

@@ -1,10 +1,9 @@
-import React from 'react';
-import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 import Card from './Card';
 
 describe('card', () => {
-  it('expect to render Card component', () => {
+  it('expect to render Card component without crashing', () => {
     expect.assertions(1);
-    expect(shallow(<Card />)).toMatchSnapshot();
+    expect(renderer.create(<Card />).toJSON()).toMatchSnapshot();
   });
 });
