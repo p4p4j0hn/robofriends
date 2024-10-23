@@ -1,10 +1,3 @@
-import { configure } from 'enzyme';
-// import Adapter from 'enzyme-adapter-react-16'; only use for React 16
-// import Adapter from '@wojtekmaj/enzyme-adapter-react-17'; only use for React 17
-import Adapter from '@cfaester/enzyme-adapter-react-18';
-import util from 'util';
-
-configure({ adapter: new Adapter() });
-Object.defineProperty(global, 'TextEncoder', {
-  value: util.TextEncoder
-});
+// react-testing-library renders your components to document.body,
+// this adds jest-dom's custom assertions
+import '@testing-library/jest-dom';
