@@ -1,12 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`header expect to render Header component 1`] = `
-<Fragment>
+Array [
   <h1
     className="f1-ns fw2"
   >
     RoboFriends
-  </h1>
-  <CounterButton />
-</Fragment>
+  </h1>,
+  <button
+    id="counter"
+    onClick={[Function]}
+  >
+    Count: 
+    0
+  </button>,
+]
 `;
