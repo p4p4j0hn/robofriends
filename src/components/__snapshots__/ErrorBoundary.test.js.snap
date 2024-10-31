@@ -1,3 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`errorboundary expect to render ErrorBoundary component 1`] = `""`;
+exports[`errorboundary expect to render ErrorBoundary component 1`] = `
+<p>
+  Everything is fine
+</p>
+`;
